@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sé Nuestro Proveedor | Logistec Guatemala</title>
+<meta name="description" content="Súmate a la red de transporte de Logistec Guatemala, S.A. con tu empresa y unidad de transporte.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="preloader"><div class="loader-mark">LOGISTEC</div></div>
+
+<!-- ===== HEADER ===== -->
+<header id="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/logistec-logo-white.png" alt="Logistec Guatemala, S.A." class="logo-img">
+    </a>
+
+    <nav id="nav" class="nav">
+      <a href="index.html#inicio">Inicio</a>
+      <a href="index.html#nosotros">Nosotros</a>
+      <a href="index.html#servicios">Servicios</a>
+      <a href="index.html#flota">Flota</a>
+      <a href="index.html#seguridad">Seguridad</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="social-row social-row--header">
+        <a href="#" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 8.5h2V5.5h-2.5A3.5 3.5 0 0 0 11 9v2H9v3h2v6h3v-6h2.4l.6-3H14V9c0-.4.2-.5.5-.5Z" fill="currentColor"/></svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="4.5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="3.6" stroke="currentColor" stroke-width="1.5"/><circle cx="16.8" cy="7.2" r="1" fill="currentColor"/></svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.2" cy="8.4" r="1.15" fill="currentColor"/><path d="M8.2 11v5.2M11.6 16.2V13c0-1.1.7-2 2-2s1.8.9 1.8 2v3.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+      <a href="index.html#contacto" class="btn btn-primary btn-nav">Solicita una cotización</a>
+    </div>
+
+    <button id="burger" class="burger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero">
+  <div class="container">
+    <p class="eyebrow">RED DE PROVEEDORES</p>
+    <h1>Quiero ser proveedor</h1>
+    <p>Cuéntanos sobre tu empresa y la unidad de transporte que puedes ofrecer. Nuestro equipo revisará tu información y se pondrá en contacto contigo.</p>
+  </div>
+</section>
+
+<!-- ===== FORMULARIO ===== -->
+<section class="contact">
+  <div class="container contact-inner">
+    <div class="contact-info reveal">
+      <p class="eyebrow">ALIANZA COMERCIAL</p>
+      <h2>Súmate a nuestra red de transporte</h2>
+      <p class="section-sub">Trabajamos con proveedores confiables para complementar nuestra operación a nivel nacional.</p>
+
+      <ul class="check-list">
+        <li>Cuéntanos los datos de tu empresa y de contacto</li>
+        <li>Indícanos qué tipo de unidad puedes ofrecer</li>
+        <li>Nuestro equipo evaluará tu información y te contactará</li>
+      </ul>
+    </div>
+
+    <form class="contact-form reveal" id="providerForm" action="https://formsubmit.co/operaciones@logistecgt.com" method="POST">
+      <input type="hidden" name="_subject" value="Nueva solicitud de proveedor - Logistec">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="gracias.html?tipo=proveedor">
+
+      <div class="form-row">
+        <div class="field">
+          <label for="empresa">Nombre de la empresa</label>
+          <input type="text" id="empresa" name="empresa" required placeholder="Nombre de tu empresa">
+        </div>
+        <div class="field">
+          <label for="nombre_contacto">Nombre del contacto</label>
+          <input type="text" id="nombre_contacto" name="nombre_contacto" required placeholder="Tu nombre completo">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="field">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com">
+        </div>
+        <div class="field">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" required placeholder="Tu número de contacto">
+        </div>
+      </div>
+      <div class="field">
+        <label for="tipo_unidad">Unidad de transporte que puede brindar</label>
+        <select id="tipo_unidad" name="tipo_unidad" required>
+          <option value="" disabled selected>Selecciona una opción</option>
+          <option value="Cabezal con Furgón">Cabezal con Furgón</option>
+          <option value="Cabezal con Plataforma">Cabezal con Plataforma</option>
+          <option value="Camión de 10TN">Camión de 10TN</option>
+          <option value="Camión de 5TN">Camión de 5TN</option>
+          <option value="Cabezal con Granelera">Cabezal con Granelera</option>
+          <option value="Góndola">Góndola</option>
+          <option value="Rastra">Rastra</option>
+          <option value="Traslado de Contenedores">Traslado de Contenedores</option>
+          <option value="Otro">Otro</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="detalle">Detalle de la unidad</label>
+        <textarea id="detalle" name="detalle" rows="4" placeholder="Marca, modelo, capacidad, cantidad de unidades disponibles, cobertura..."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Enviar solicitud</button>
+      <p class="form-note" id="providerFormNote"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <img src="assets/logistec-logo-white.png" alt="Logistec Guatemala, S.A." class="logo-img">
+      </a>
+      <p>Transporte de carga pesada a nivel nacional. Conectamos tu carga con su destino.</p>
+      <div class="social-row">
+        <a href="#" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M15 8.5h2V5.5h-2.5A3.5 3.5 0 0 0 11 9v2H9v3h2v6h3v-6h2.4l.6-3H14V9c0-.4.2-.5.5-.5Z" fill="currentColor"/></svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="4.5" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="3.6" stroke="currentColor" stroke-width="1.5"/><circle cx="16.8" cy="7.2" r="1" fill="currentColor"/></svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.5"/><circle cx="8.2" cy="8.4" r="1.15" fill="currentColor"/><path d="M8.2 11v5.2M11.6 16.2V13c0-1.1.7-2 2-2s1.8.9 1.8 2v3.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h5>Navegación</h5>
+      <a href="index.html#inicio">Inicio</a>
+      <a href="index.html#nosotros">Nosotros</a>
+      <a href="index.html#servicios">Servicios</a>
+      <a href="index.html#flota">Flota</a>
+      <a href="index.html#contacto">Contacto</a>
+    </div>
+
+    <div class="footer-col">
+      <h5>Únete</h5>
+      <a href="empleos.html">Trabaja con nosotros</a>
+      <a href="proveedores.html">Sé nuestro proveedor</a>
+    </div>
+
+    <div class="footer-col">
+      <h5>Flota</h5>
+      <a href="index.html#flota">Cabezales con Furgón</a>
+      <a href="index.html#flota">Plataformas y Góndolas</a>
+      <a href="index.html#flota">Traslado de Contenedores</a>
+    </div>
+
+    <div class="footer-col">
+      <h5>Contacto</h5>
+      <a href="tel:+50230719896">(502) 3071-9896</a>
+      <a href="mailto:operaciones@logistecgt.com">operaciones@logistecgt.com</a>
+      <span class="footer-address">KM 10.5 Carretera al Atlántico, atrás de Gasolinera Puma</span>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year"></span> Logistec Guatemala, S.A. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/50230719896" class="fab fab-whatsapp" aria-label="Escríbenos por WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.01 3C9.38 3 4 8.38 4 15.01c0 2.23.6 4.32 1.65 6.12L4 29l8.06-1.6a11.9 11.9 0 0 0 3.95.67C22.64 28.07 28 22.7 28 16.06 28 9.44 22.64 3 16.01 3Zm0 21.6c-1.3 0-2.58-.28-3.74-.83l-.27-.13-4.79.95.98-4.66-.16-.28a9.5 9.5 0 0 1-1.44-5.03c0-5.28 4.3-9.58 9.6-9.58 2.56 0 4.97 1 6.78 2.81a9.5 9.5 0 0 1 2.8 6.76c0 5.3-4.3 9.99-9.76 9.99Zm5.34-7.13c-.29-.15-1.72-.85-1.99-.95-.27-.1-.46-.15-.66.14-.19.29-.75.95-.92 1.14-.17.19-.34.22-.63.07-.29-.14-1.22-.45-2.32-1.43-.86-.76-1.44-1.71-1.6-2-.17-.29-.02-.44.13-.59.13-.13.29-.34.43-.51.15-.17.19-.29.29-.48.1-.19.05-.36-.02-.51-.07-.14-.66-1.6-.91-2.19-.24-.58-.48-.5-.66-.51h-.56c-.19 0-.5.07-.77.36-.26.29-1 .98-1 2.39 0 1.41 1.03 2.77 1.17 2.96.14.19 2.02 3.09 4.9 4.33.68.3 1.22.47 1.63.6.68.22 1.31.19 1.8.11.55-.08 1.72-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.26-.19-.55-.34Z"/></svg>
+</a>
+
+<script src="js/script.js"></script>
+<script src="js/forms.js"></script>
+</body>
+</html>
