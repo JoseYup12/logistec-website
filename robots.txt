@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /gracias.html
 
-Sitemap: https://logistec-website.vercel.app/sitemap.xml
+Sitemap: https://logistecgt.com/sitemap.xml
