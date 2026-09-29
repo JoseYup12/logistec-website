@@ -276,35 +276,6 @@ svg{ width: 100%; height: 100%; }
 }
 
 /* ==========================================================================
-   Visión destacada
-   ========================================================================== */
-.vision-band{
-  position: relative; padding: 100px 0; background: var(--white); overflow: hidden;
-  border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
-}
-.vision-band-bg{
-  position: absolute; right: -100px; top: 50%; transform: translateY(-50%);
-  width: 360px; height: 360px; color: rgba(122,31,43,0.14); pointer-events: none;
-}
-.vision-inner{ position: relative; z-index: 1; max-width: 760px; }
-.vision-tag{
-  display: inline-block; background: var(--red); color: var(--white);
-  font-family: var(--ff-head); font-weight: 800; font-size: 12px; letter-spacing: 0.14em;
-  padding: 9px 20px; border-radius: 100px; margin-bottom: 26px;
-}
-.vision-text{
-  font-family: var(--ff-head); font-weight: 600; font-size: clamp(1.15rem, 2.3vw, 1.55rem);
-  line-height: 1.55; color: var(--black); margin-bottom: 46px;
-}
-.vision-text strong{ color: var(--red); font-weight: 800; }
-.vision-badges{ display: flex; gap: 38px; flex-wrap: wrap; }
-.vision-badge{
-  display: flex; align-items: center; gap: 12px;
-  font-family: var(--ff-head); font-weight: 700; font-size: 13px; color: var(--black);
-}
-.vision-badge svg{ width: 30px; height: 30px; color: var(--red); flex-shrink: 0; }
-
-/* ==========================================================================
    Services
    ========================================================================== */
 .services{ padding: 110px 0; }
@@ -692,8 +663,6 @@ svg{ width: 100%; height: 100%; }
   .safety-grid{ grid-template-columns: repeat(2, 1fr); }
   .pilots{ grid-template-columns: 1fr; }
   .pilots-media{ order: 2; }
-  .vision-band-bg{ display: none; }
-  .vision-badges{ gap: 24px; }
   .join-us-grid{ grid-template-columns: 1fr; }
   .footer-inner{ grid-template-columns: 1fr 1fr 1fr; }
 }
@@ -713,7 +682,6 @@ svg{ width: 100%; height: 100%; }
   .media-badge{ left: 0; }
   .safety-grid{ grid-template-columns: 1fr; }
   .fleet-feature-content{ padding: 28px; }
-  .vision-badges{ flex-direction: column; gap: 16px; }
   .coverage-grid{ grid-template-columns: repeat(2, 1fr); }
 
   .nav.open{
